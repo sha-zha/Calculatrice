@@ -31,6 +31,11 @@ namespace Calculatrice
         public void RunInteger(object sender, EventArgs e)
         {
             Button btn = sender as Button;
+            if(input.Text.EndsWith("="))
+            {
+                input.Text = "";
+                input2.Text = "";
+            }
             input2.Text += (string)btn.Content; 
         }
 
@@ -72,12 +77,6 @@ namespace Calculatrice
             Button btn = sender as Button;
            
             input.Text += input2.Text + (string) btn.Content;
-        }
-
-        public void RunAddRun ()
-        {
-          
-
         }
 
         public void RunCalcule(object sender, EventArgs e)

@@ -20,9 +20,18 @@ namespace Calculatrice
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+
+        public void RunInteger(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            input.Text += (string)btn.Content; 
+
         }
     }
 }

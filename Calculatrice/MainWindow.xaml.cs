@@ -39,7 +39,35 @@ namespace Calculatrice
             input2.Text = "";
         }
 
-        public void RunOperator(object sender, EventArgs e)
+        public void RunCE(object sender, EventArgs e)
+        {
+            if(input.Text.EndsWith("+") || input.Text.EndsWith("-") || input.Text.EndsWith("*") || input.Text.EndsWith("/") )
+            {
+                input2.Text = "";
+            }
+            else
+            {
+                input.Text = "";
+                input2.Text = "";
+            }
+        }
+
+        public void RunBack(object sender, EventArgs e)
+        {
+            string str = input2.Text;
+            if (str.Length > 0)
+            {
+                input2.Text = str.Remove(str.Length - 1);
+            }
+            else
+            {
+                input.Text = input.Text.Remove(input.Text.Length - 1);
+            }
+            
+
+        }
+
+            public void RunOperator(object sender, EventArgs e)
         {
             Button btn = sender as Button;
            
@@ -48,9 +76,6 @@ namespace Calculatrice
 
         public void RunAddRun (object sender, EventArgs e)
         {
-            
-            double num1, num2;
-            double.TryParse(input.Text, out num1); 
 
             if(input.Text.Contains('+') )
             {

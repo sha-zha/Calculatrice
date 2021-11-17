@@ -30,13 +30,34 @@ namespace Calculatrice
         public void RunInteger(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            input.Text += (string)btn.Content; 
-
+            input2.Text += (string)btn.Content; 
         }
 
         public void RunClear(object sender, EventArgs e)
         {
             input.Text = "";
+            input2.Text = "";
         }
+
+        public void RunOperator(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+           
+            input.Text += input2.Text + (string) btn.Content;
+        }
+
+        public void RunAddRun (object sender, EventArgs e)
+        {
+            
+            double num1, num2;
+            double.TryParse(input.Text, out num1); 
+
+            if(input.Text.Contains('+') )
+            {
+             
+            }
+
+        }
+
     }
 }

@@ -33,5 +33,10 @@ namespace Calculatrice
             input.Text += (string)btn.Content; 
 
         }
+
+        public void RunClear(object sender, EventArgs e)
+        {
+            input.Text = "";
+        }
     }
 }

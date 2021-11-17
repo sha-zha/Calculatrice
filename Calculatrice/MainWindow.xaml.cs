@@ -20,6 +20,7 @@ namespace Calculatrice
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int num1;
 
         public MainWindow()
         {
@@ -66,7 +67,6 @@ namespace Calculatrice
             
 
         }
-
             public void RunOperator(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -74,15 +74,71 @@ namespace Calculatrice
             input.Text += input2.Text + (string) btn.Content;
         }
 
-        public void RunAddRun (object sender, EventArgs e)
+        public void RunAddRun ()
         {
-
-            if(input.Text.Contains('+') )
-            {
-             
-            }
+          
 
         }
 
+        public void RunCalcule(object sender, EventArgs e)
+        {
+
+            if (input.Text.Contains('+'))
+            {
+                double num1,num2,result;
+                //suprimmer opérateur
+                input.Text = input.Text.Remove(input.Text.Length - 1);
+                //conversion string to double
+                double.TryParse(input.Text, out num1);
+                double.TryParse(input2.Text, out num2);
+                //calcule
+                result = num1 + num2;
+                //resultat
+                input.Text = num1.ToString() + "+" + num2.ToString() + "="; 
+                input2.Text = result.ToString();
+            }
+            if (input.Text.Contains('-'))
+            {
+                double num1, num2, result;
+                //suprimmer opérateur
+                input.Text = input.Text.Remove(input.Text.Length - 1);
+                //conversion string to double
+                double.TryParse(input.Text, out num1);
+                double.TryParse(input2.Text, out num2);
+                //calcule
+                result = num1 - num2;
+                //resultat
+                input.Text = num1.ToString() + "-" + num2.ToString() + "=";
+                input2.Text = result.ToString();
+            }
+            if (input.Text.Contains('*'))
+            {
+                double num1, num2, result;
+                //suprimmer opérateur
+                input.Text = input.Text.Remove(input.Text.Length - 1);
+                //conversion string to double
+                double.TryParse(input.Text, out num1);
+                double.TryParse(input2.Text, out num2);
+                //calcule
+                result = num1 * num2;
+                //resultat
+                input.Text = num1.ToString() + "*" + num2.ToString() + "=";
+                input2.Text = result.ToString();
+            }
+            if (input.Text.Contains('/'))
+            {
+                double num1, num2, result;
+                //suprimmer opérateur
+                input.Text = input.Text.Remove(input.Text.Length - 1);
+                //conversion string to double
+                double.TryParse(input.Text, out num1);
+                double.TryParse(input2.Text, out num2);
+                //calcule
+                result = num1 / num2;
+                //resultat
+                input.Text = num1.ToString() + "/" + num2.ToString() + "=";
+                input2.Text = result.ToString();
+            }
+        }
     }
 }

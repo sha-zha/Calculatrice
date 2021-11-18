@@ -4,7 +4,6 @@ C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Debug\netcoreapp3.1\Cal
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Debug\netcoreapp3.1\Calculatrice.runtimeconfig.dev.json
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Debug\netcoreapp3.1\Calculatrice.dll
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Debug\netcoreapp3.1\Calculatrice.pdb
-C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Calculatrice.csproj.AssemblyReference.cache
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Calculatrice_MarkupCompile.cache

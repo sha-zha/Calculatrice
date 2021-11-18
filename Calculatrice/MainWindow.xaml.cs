@@ -36,6 +36,7 @@ namespace Calculatrice
                 input.Text = "";
                 input2.Text = "";
             }
+
             input2.Text += (string)btn.Content; 
         }
 
@@ -67,18 +68,40 @@ namespace Calculatrice
             }
             else
             {
-                input.Text = input.Text.Remove(input.Text.Length - 1);
+                return;
             }
             
 
         }
-            public void RunOperator(object sender, EventArgs e)
+        public void RunOperator(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-           
+            if (input.Text.EndsWith("+") || input.Text.EndsWith("-") || input.Text.EndsWith("*") || input.Text.EndsWith("/"))
+            {
+                return;
+            }
+
+            if (input.Text.EndsWith('=')) 
+            {
+                input.Text = "";
+            }
+
             input.Text += input2.Text + (string) btn.Content;
         }
 
+        public void RunNegatif(object sender, EventArgs e)
+        {
+            double num, nb;
+            
+            if (input2.Text.Length > 0)
+            {
+                double.TryParse(input2.Text, out num);
+
+                nb = num*-1;
+                input2.Text = nb.ToString();
+            }
+            
+        }
         public void RunCalcule(object sender, EventArgs e)
         {
 

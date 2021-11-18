@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,26 +108,26 @@ namespace Calculatrice
 
             if (input.Text.Contains('+'))
             {
-                double num1,num2,result;
+                double result;
                 //suprimmer opérateur
                 input.Text = input.Text.Remove(input.Text.Length - 1);
                 //conversion string to double
-                double.TryParse(input.Text, out num1);
-                double.TryParse(input2.Text, out num2);
+                double.TryParse(input.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num1);
+                double.TryParse(input2.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num2);
                 //calcule
                 result = num1 + num2;
                 //resultat
-                input.Text = num1.ToString() + "+" + num2.ToString() + "="; 
-                input2.Text = result.ToString();
+                input.Text = num1.ToString("F2") + "+" + num2.ToString("F2") + "="; 
+                input2.Text = result.ToString("F2");
             }
             if (input.Text.Contains('-'))
             {
-                double num1, num2, result;
+                double result;
                 //suprimmer opérateur
                 input.Text = input.Text.Remove(input.Text.Length - 1);
                 //conversion string to double
-                double.TryParse(input.Text, out num1);
-                double.TryParse(input2.Text, out num2);
+                double.TryParse(input.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num1);
+                double.TryParse(input2.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num2);
                 //calcule
                 result = num1 - num2;
                 //resultat
@@ -135,12 +136,12 @@ namespace Calculatrice
             }
             if (input.Text.Contains('*'))
             {
-                double num1, num2, result;
+                double result;
                 //suprimmer opérateur
                 input.Text = input.Text.Remove(input.Text.Length - 1);
                 //conversion string to double
-                double.TryParse(input.Text, out num1);
-                double.TryParse(input2.Text, out num2);
+                double.TryParse(input.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num1);
+                double.TryParse(input2.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num2);
                 //calcule
                 result = num1 * num2;
                 //resultat
@@ -149,12 +150,12 @@ namespace Calculatrice
             }
             if (input.Text.Contains('/'))
             {
-                double num1, num2, result;
+                double result;
                 //suprimmer opérateur
                 input.Text = input.Text.Remove(input.Text.Length - 1);
                 //conversion string to double
-                double.TryParse(input.Text, out num1);
-                double.TryParse(input2.Text, out num2);
+                double.TryParse(input.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num1);
+                double.TryParse(input2.Text, NumberStyles.Number, CultureInfo.InvariantCulture, out double num2);
                 //calcule
                 result = num1 / num2;
 

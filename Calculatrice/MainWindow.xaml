@@ -5,51 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculatrice"
         mc:Ignorable="d"
-        Title="Calculatrice" Height="450" Width="499">
-    <Grid Background="#FF020837">
+        Title="Calculatrice" Height="450" Width="470" HorizontalAlignment="Center" MaxWidth="470" MinWidth="400">
+    <Grid Background="#FF020837" Width="470" HorizontalAlignment="Center">
 
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
-        
-        <Grid Margin="0,0,-59,0" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-            </Grid.ColumnDefinitions>
 
-            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="150,136,0,0">
+        <Grid Margin="9,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="385" >
+
+
+            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="60,136,60,0">
                 <Button Content="7" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="4" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="1" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="0" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
             </WrapPanel>
-            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="300,136,0,0">
+            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="132,136,0,0">
                 <Button Content="9" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="6" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="3" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="." Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
             </WrapPanel>
-            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="225,136,0,0">
+            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="192,136,0,0">
                 <Button Content="8" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="5" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="2" Click="RunInteger" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="+/-" Click="RunNegatif" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF28369D" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
             </WrapPanel>
-            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="375,86,0,0">
+            <WrapPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="266,86,0,0">
                 <Button Content="/" Click=" RunOperator" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="*" Click=" RunOperator" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="-" Click=" RunOperator" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="0,0,0,0" Height="50"/>
                 <Button Content="+" Click=" RunOperator" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Height="50"/>
+                <Button Click="RunCalcule" Content="=" HorizontalAlignment="Left"     VerticalAlignment="Center" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75"  Height="50"/>
             </WrapPanel>
-            <Button Click="RunCalcule" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="375,286,0,0" Height="50"/>
-            <Button Content="C" Click="RunClear" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="225,86,0,0" Height="50"/>
-            <TextBox Name="input" HorizontalAlignment="Left" Margin="149,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Height="30" FontSize="24" Background="#FF0D196E" BorderBrush="#00ABADB3" Foreground="White"/>
-            <Button Click="RunCE" Content="CE"  HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="150,86,0,0" Height="50"/>
-            <Button Click="RunBack" Content="Retour en &#xD;&#xA;arrière"  HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="300,86,0,0" Height="50"/>
-            <TextBox x:Name="input2" HorizontalAlignment="Left" Margin="149,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Height="30" FontSize="24" BorderBrush="#00ABADB3" Background="#FF0D196E" Foreground="White"/>
+
+            <Button Content="C" Click="RunClear" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="132,86,0,0" Height="50"/>
+            <TextBox Name="input" HorizontalAlignment="Left" Margin="60,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" Height="30" FontSize="24" Background="#FF0D196E" BorderBrush="#00ABADB3" Foreground="White"/>
+            <Button Click="RunCE" Content="CE"  HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" FontSize="20" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="60,86,0,0" Height="50"/>
+            <Button Click="RunBack" Content="Retour en &#xD;&#xA;arrière"  HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Yu Gothic UI" BorderBrush="#0028369D" Background="#FF0D196E" Foreground="White" BorderThickness="0,0,0,0" Padding="10,5,10,5" MinHeight="20" MaxWidth="100" Width="75" Margin="192,86,0,0" Height="50"/>
+            <TextBox x:Name="input2" HorizontalAlignment="Left" Margin="60,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" Height="30" FontSize="24" BorderBrush="#00ABADB3" Background="#FF0D196E" Foreground="White"/>
 
         </Grid>
-      
+
     </Grid>
 </Window>

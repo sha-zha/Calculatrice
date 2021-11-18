@@ -157,9 +157,17 @@ namespace Calculatrice
                 double.TryParse(input2.Text, out num2);
                 //calcule
                 result = num1 / num2;
-                //resultat
+
+                if( double.IsNaN(result) || double.IsInfinity(result) )
+                {
+                    input.Text = "Désolée";
+                }
+                else 
+                { 
                 input.Text = num1.ToString() + "/" + num2.ToString() + "=";
                 input2.Text = result.ToString();
+                }
+                
             }
         }
     }

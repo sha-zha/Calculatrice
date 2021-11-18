@@ -17,3 +17,4 @@ C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Cal
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Calculatrice.dll
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Calculatrice.pdb
 C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Calculatrice.genruntimeconfig.cache
+C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\obj\Debug\netcoreapp3.1\Calculatrice.csproj.AssemblyReference.cache

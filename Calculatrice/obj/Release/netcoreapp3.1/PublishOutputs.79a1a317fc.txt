@@ -1,0 +1,5 @@
+C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Release\netcoreapp3.1\publish\Calculatrice.exe
+C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Release\netcoreapp3.1\publish\Calculatrice.dll
+C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Release\netcoreapp3.1\publish\Calculatrice.deps.json
+C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Release\netcoreapp3.1\publish\Calculatrice.runtimeconfig.json
+C:\Users\Dell\Desktop\.NET\Calculatrice\Calculatrice\bin\Release\netcoreapp3.1\publish\Calculatrice.pdb
